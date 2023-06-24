@@ -8,7 +8,7 @@ const cors = require('cors')
 const path = require('path')
 const { urlencoded } = require('express')
 const app = express()
-const port = 8000
+const port = process.enc.PORT || 3001
 
 const faviconPath = '/public/images/favicon/favicon.ico'
 const publicPath = '/public'
