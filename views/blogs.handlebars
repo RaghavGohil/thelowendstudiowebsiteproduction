@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="/css/blogs.css">
+<div class="blogs-page">
+    <div class="blogs-container">
+        <div class="search-container" id="search-container">
+            <form class = "search" action="/blogs" method="GET">
+                <input type="text" id="search-input" name="search" placeholder="Search blogs"></input>
+                <button type="submit" onclick="OnClickSearch()"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg> 
+                </button>
+            </form>
+        </div>
+        <div class="result-container" id="result-container">
+            
+            <div class="result-item-container" id="result-item-container">
+                {{!-- <div class="result-item">
+                <div class="result-text">
+                    <p>{{this.title}}</p>
+                </div>
+            </div> LOOP THROUGH JAVASCRIPT(search_blog.js) --}}
+            </div>
+            <div class="no-result-item" id="no-result">
+                <div class="no-result-text">
+                    <p>No results found.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div id="status" class="status">{{status}}</div>
+        <script src="/js/search_blog.js"></script>
+        
+        <br>
+
+        {{#each blogs}}
+        <div class="blog-container">
+            <div class="blog-image">
+                <img src="{{this.i_src}}" alt="Image cannot be loaded.">
+            </div>
+            <div class="blog-content">
+                <div class="blog-data">
+                    {{this.date}}, {{this.author}}
+                </div>
+                <div class="blog-title">
+                    {{this.title}}
+                </div>
+                <hr>
+                <div class="blog">
+                    <p>{{this.desc}}</p>
+                </div>
+                <div class="blog-read-more">
+                    <a href='/blogpost/{{this._id}}'>read more</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        <div class="blog-navigation">
+            <div class="previous-blog" id="previous-blog">
+                <button onclick="previous()">
+                    prev
+                </button>
+            </div>
+            <div class="page-number">
+                {{pageNumber}}
+            </div>
+            <div class="next-blog" id="next-blog">
+                <button onclick="next()">
+                    next
+                </button>
+            </div>
+            <script src="/js/blog_navigation.js"></script>
+        </div>
+    </div>
+</div>

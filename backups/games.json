@@ -1,0 +1,13 @@
+{
+  "published": true,
+  "date": "2023-05-03T13:24:00Z",
+  "u_date": "2023-05-03T13:24:00Z",
+  "category": "Action",
+  "title": "Galactic Battle",
+  "desc": "Join the fight to save the galaxy from the evil empire in this action-packed space shooter.",
+  "tags": ["space", "shooter", "action"],
+  "i_src": "https://example.com/games/galactic_battle.jpg",
+  "d_link": "https://example.com/games/galactic_battle.zip",
+  "nsfw": false,
+  "hidden": false
+}

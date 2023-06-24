@@ -1,0 +1,156 @@
+.blogpost-page
+{
+    background-color: #0c0c0c;
+    width: 100%;
+    max-height:auto;
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 974px)
+{
+    .blogpost-container
+    {
+        padding-top: 110px;
+        padding-bottom: 80px;
+        width: 1500px;
+        max-width: 70%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 973px)
+{
+    .blogpost-container
+    {
+        padding-top: 110px;
+        padding-bottom: 80px;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    /* disqus */
+
+    #disqus_thread{
+        width:1400px;
+        max-width:90%;
+        margin:auto;
+        padding-bottom: 110px; 
+        background-color: transparent;
+    }
+}
+
+.blogpost-content-container
+{
+    background-color: #191919;
+}
+
+.blogpost-content
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blogpost-title
+{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.blogpost-title hr
+{
+    height:1px;
+    width:80%;
+    margin: auto;
+    border-width: 0px;
+    margin-top: 10px;
+    background-color:#474747;
+}
+
+.blogpost-content .blogpost-data
+{
+    font-size: large;
+}
+
+.blogpost-content .blogpost-data svg
+{
+    width: 20px;
+    height: 20px;
+}
+
+.blogpost-content .blogpost-data a
+{
+    color: #FAD166;
+    text-decoration: underline;
+}
+
+.blogpost-data h4
+{
+    color: #DEDEDE;
+    text-align: center;
+}
+
+.blogpost-body
+{
+    color: #DEDEDE;
+}
+
+/* Override marked components. */
+
+.blogpost-content pre
+{
+    color: rgb(72, 173, 135);
+    background-color: rgb(20,20,20);
+    font-family: 'VT323', monospace;
+    padding: 2px;
+}
+
+.blogpost-content a
+{
+    color:#FAD166;
+}
+
+.blogpost-content ul, .blogpost-content ol {
+    margin-left: 0.75em;
+    list-style-position: inside;
+}
+
+@media screen and (min-width: 974px)
+{
+    .blogpost-content .blogpost-body img
+    {   
+        height: 100%;
+        width: 100%;
+        object-fit:fill;
+        overflow-clip-margin: unset;
+        overflow: unset;
+    }
+    /* disqus */
+
+    #disqus_thread{
+        width:1400px;
+        max-width:50%;
+        margin:auto;
+        padding-bottom: 110px; 
+        background-color: transparent;
+    }
+}
+
+/* disqus continued */
+
+#disqus_thread a {
+    color: #dedede;
+}
+
+#disqus_thread img {
+    border: none !important;
+}
+
+#disqus_thread .avatar .image-refresh.image-refresh.image-refresh.image-refresh.image-refresh.image-refresh {
+    border-radius: 0px;
+}

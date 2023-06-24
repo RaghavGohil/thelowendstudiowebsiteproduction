@@ -1,0 +1,267 @@
+.contactus-page-container
+{
+    width: 100%;
+    max-height:auto;
+    min-height: 100vh;
+    background-color: #0c0c0c;
+}
+
+.contactus-page
+{
+    width: 90%;
+    max-width: 1500px;
+    display: flex;
+    margin:auto;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+@media screen and (min-width: 973px)
+{
+
+    .contactus-left
+    {
+        background-color: #191919;
+        padding:30px;
+        /* height: auto; */
+        width:50%;
+    }
+
+    .contactus-left .contactus-text-heading
+    {
+        font-size:30px;
+        color:white;
+    }
+
+    .contactus-left .contactus-text-heading hr
+    {
+        height:1px;
+        border-width: 0px;
+        width:139px;
+        margin-bottom: 10px;
+        background-color:#FAD166;
+        animation-name: contactus-text-heading;
+        animation-duration: 1s;
+    }
+
+    .contactus-left .contactus-description
+    {
+        font-size: 17px;
+        color:white;
+    }
+
+    .contactus-left .contactus-warning
+    {
+        font-size: 17px;
+        color:rgb(27, 27, 27);
+        background-color: rgb(255, 98, 98);
+        font-weight: 700;
+        padding:10px;
+    }
+
+    .contactus-left .contact-details-container
+    {
+        color:white;
+        margin-top:20px;
+        font-size:15px;
+        text-align: justify;
+    }
+
+    .contactus-left .contact-details-container input::placeholder , .contactus-left .contact-details-container textarea::placeholder
+    {
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .contactus-left .contact-details-container input
+    {
+        border: 1px solid #474747;
+        background-color: transparent;
+        outline: none;
+        cursor:text;
+        padding:20px;
+        font-size: 15px;
+        width:100%;
+        color: #ffffff;
+        height:45px;
+    }
+
+    .contactus-left .contact-details-container textarea
+    {
+        border: 1px solid #474747;
+        font-size: 15px;
+        padding:20px;
+        color: #ffffff;
+        background-color: transparent;
+        outline: none;
+        cursor:text;
+        width:100%;
+        height:200px;
+        resize: none;
+    }
+
+    .contactus-left .contact-details-container button
+    {
+        display: block;
+        background-color: #FAD166;
+        border: none;
+        color:#000000;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .contactus-left .contact-details-container p
+    {
+        color: #ffffff;
+    }
+
+    .contactus-right
+    {
+        width:50%;
+        /* height: auto; */
+    }
+
+    .contactus-right img
+    {
+        display: block;
+        object-fit: cover;
+        width:100%;
+        height:100%;
+    }
+
+
+    /* 
+    Animations start from here:
+    */
+
+    @keyframes contactus-text-heading {
+        0%{width:0px;}
+        100%{width:139px;}
+    }
+
+}
+
+@media screen and (max-width: 974px)
+{
+
+    .contactus-left
+    {
+        background-color: #191919;
+        padding:30px;
+        /* height: auto; */
+        width:100%;
+    }
+
+    .contactus-left .contactus-text-heading
+    {
+        font-size:30px;
+        color:white;
+    }
+
+    .contactus-left .contactus-text-heading hr
+    {
+        height:1px;
+        border-width: 0px;
+        width:139px;
+        margin-bottom: 10px;
+        background-color:#FAD166;
+        animation-name: contactus-text-heading;
+        animation-duration: 1s;
+    }
+
+    .contactus-left .contactus-description
+    {
+        font-size: 17px;
+        color:white;
+    }
+
+    .contactus-left .contactus-warning
+    {
+        font-size: 17px;
+        color:rgb(27, 27, 27);
+        background-color: rgb(255, 98, 98);
+        font-weight: 700;
+        padding:10px;
+    }
+
+    .contactus-left .contact-details-container
+    {
+        color:white;
+        margin-top:20px;
+        font-size:15px;
+        text-align: justify;
+    }
+
+    .contactus-left .contact-details-container input::placeholder , .contactus-left .contact-details-container textarea::placeholder
+    {
+        color: #ffffff;
+        font-size: 15px;
+    }
+
+    .contactus-left .contact-details-container input
+    {
+        border: 1px solid #474747;
+        background-color: transparent;
+        outline: none;
+        cursor:text;
+        padding:20px;
+        font-size: 15px;
+        width:100%;
+        color: #ffffff;
+        height:45px;
+    }
+
+    .contactus-left .contact-details-container textarea
+    {
+        border: 1px solid #474747;
+        font-size: 15px;
+        padding:20px;
+        color: #ffffff;
+        background-color: transparent;
+        outline: none;
+        cursor:text;
+        width:100%;
+        height:200px;
+        resize: none;
+    }
+
+    .contactus-left .contact-details-container button
+    {
+        display: block;
+        background-color: #FAD166;
+        border: none;
+        color:#000000;
+        cursor: pointer;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .contactus-left .contact-details-container p
+    {
+        color: #ffffff;
+    }
+
+    .contactus-right
+    {
+        display: none;
+        /* height: auto; */
+    }
+
+    /* 
+    Animations start from here:
+    */
+
+    @keyframes contactus-text-heading {
+        0%{width:0px;}
+        100%{width:139px;}
+    }
+
+}

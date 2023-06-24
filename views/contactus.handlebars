@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/contactus.css">
+<div class="contactus-page-container">
+    <div class="contactus-page">
+        <div class="contactus-left">
+            <div class="contactus-text-heading">
+                Contact us
+                <hr>
+            </div>
+            <div class="contact-details-container">
+                <div class="contactus-warning">
+                    We aren't accepting quotes at the moment. We will update this page when we are ready to accept quotes.
+                </div>
+                <br>
+                <div class="contactus-description">
+                    Want to request a quote, or give us feedback, or simply want to say hello? We encourage you to reach out to us through our contact form or any of our social media channels linked at the bottom.
+                </div>
+                <div class="contactus-form">
+                    <br>
+                    <form action="https://formsubmit.co/raghavgohil2004@gmail.com" method="POST">
+                        <p>Name*</p>
+                        <input type="text" name="name"required><br><br>
+                        <p>Email*</p>
+                        <input type="email" name="email"required><br><br>
+                        {{!-- Subject --}}
+                        <p>Subject</p>
+                        <input type="text" name="subject"><br><br>
+                        <input type="hidden" name="_subject" value="The Low End Studio Website Mail!">
+                        <p>Message</p>
+                        <textarea name="message"></textarea><br><br>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contactus-right">
+            <img src="/images/contact-us/contact-us.png" alt="">
+        </div>
+    </div>
+</div>

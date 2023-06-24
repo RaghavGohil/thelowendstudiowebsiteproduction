@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--/*
+Author:
+Raghav Gohil aka The Low End.
+References:
+https://www.youtube.com/watch?v=tcskp-ncN0I
+https://www.youtube.com/watch?v=eRTeF4MPnCg
+*/-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Home - The Low End Studio</title>
+        <!-- Favicon is served by express js. -->
+        <link rel="stylesheet" href="css/scrollbar_settings.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/index_background.css">
+
+        <!-- Import tags -->
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "./build/three.module.js",
+                "three/examples/jsm/controls/OrbitControls":"./jsm/controls/OrbitControls.js",
+                "three/examples/jsm/libs/stats.module":"./jsm/libs/stats.module.js",
+                "three/examples/jsm/libs/dat.gui.module":"./jsm/libs/dat.gui.module.js"
+              }
+            }
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <div class="navbar-continer">
+                <nav class="navbar">
+                    <div class="navbar-width">
+                        <div class="logo"><img src="images/logos/website/low_end_studios_title_transparent.png"></div>
+                            <div class="menu">
+                                <ul>
+                                    <li class="navbar-text-decoration"><a href="/">home</a></li>
+                                    <li><a href="/blogs">blogs</a></li>
+                                    <li><a href="/games">games</a></li>
+                                    <li><a href="/aboutus">about us</a></li>
+                                    <li><a href="/contactus">contact us</a></li>
+                                </ul>
+                            </div>
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <script src="js/hamburger.js"></script>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="index">
+            <canvas class="index_background">Your browser can't support canvas. Please use a newer version or change your browser.</canvas>
+            <script type="module" src="js/index_background.js"></script>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer">
+                    <!-- <div><a href="mailto:raghav15102004@gmail.com"> gmail </a> handle.</div> -->
+                    <!-- links -->
+                    <!-- https://www.instagram.com/_the_low_end_studio_/?hl=en
+                    https://www.youtube.com/channel/UCAdOIV3VvgJjfx3sFwVghfQ
+                    https://twitter.com/Lowendstudios1
+                    https://discord.gg/rtjkAjc
+                    https://low-end-studios.itch.io/ -->
+                    <div class="footer-logo">
+                        <img src="images/logos/website/low_end_studios_transparent.png">
+                    </div>
+                    <hr>
+                    <br>
+                    <!-- MAIN PART BEGINS HERE -->
+                    <div class="row">
+                        <div class="col">
+                            <p>Contact us at</p>
+                            <ul>
+                                <li><a href="mailto:support@thelowendstudio.com">support@thelowendstudio.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <p>Subscribe to our newsletter</p>
+                            <div class="newsletter">
+                                <form>
+                                    <input type="email" placeholder="Enter your email." required></input>
+                                    <button type="submit"><img src="../images/footer/bellicon.png"></button>
+                                </form>
+                            </div>
+                            <span>Thank you for subscribing!</span>
+                        </div>
+                        <div class="col">
+                            <p>Browse</p>
+                            <ul>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">blogs</a></li>
+                                <li><a href="#">games</a></li>
+                                <li><a href="#">aboutus</a></li>
+                                <li><a href="#">contactus</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <p>Social / Links</p>
+                            <ul>
+                                <li><a href="https://twitter.com/Lowendstudios1">twitter</a></li>
+                                <li><a href="https://www.linkedin.com/in/the-low-end-studio-4988581bb">linkedin</a></li>
+                                <li><a href="https://www.instagram.com/_the_low_end_studio_/?hl=en">instagram</a></li>
+                                <li><a href="https://www.youtube.com/channel/UCAdOIV3VvgJjfx3sFwVghfQ">youtube</a></li>
+                                <li><a href="https://discord.gg/rtjkAjc">discord</a></li>
+                                <li><a href="https://low-end-studios.itch.io/">itch.io</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <p>Legal</p>
+                            <ul>
+                                <li><a href="#">privacy policy</a></li>
+                                <li><a href="#">terms and conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- MAIN PART ENDS HERE -->
+                    <br>
+                    <hr>
+                    <br>
+                    <div class="footer-copyright">&copy; 2023 by The Low End Studio.</div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

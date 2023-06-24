@@ -1,0 +1,13 @@
+/* We will be using the famous Hind Vadodara font style. */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-family: 'Hind Vadodara', sans-serif;
+    scroll-behavior: smooth;
+}

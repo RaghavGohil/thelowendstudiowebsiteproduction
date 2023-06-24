@@ -1,0 +1,81 @@
+.aboutus-page-container
+{
+    width: 100%;
+    height:auto;
+    background-color: #0c0c0c;
+}
+
+.aboutus-page
+{
+    width: 90%;
+    max-width: 1500px;
+    max-height:auto;
+    min-height: 100vh;
+    margin:auto;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.aboutus-page .aboutus
+{
+    background-color: #191919;
+    padding:30px;
+    /* height: auto; */
+    width:100%;
+}
+
+.aboutus-page .our-story
+{
+    background-color: #191919;
+    padding:30px;
+    margin-top: 20px;
+    /* height: auto; */
+    width:100%;
+}
+
+.aboutus-page .join-us
+{
+    background-color: #191919;
+    padding:30px;
+    margin-top: 20px;
+    /* height: auto; */
+    width:100%;
+}
+
+.aboutus-page .text-heading
+{
+    font-size:30px;
+    color:white;
+}
+
+.aboutus-page .text-heading hr
+{
+    height:1px;
+    border-width: 0px;
+    width:118px;
+    background-color:#FAD166;
+    animation-name: text-heading;
+    animation-duration: 1s;
+}
+
+.aboutus-page .details-container
+{
+    color:white;
+    font-size: 17px;
+    text-align: justify;
+    scroll-behavior: smooth;
+}
+
+.aboutus-page a
+{
+    color:#FAD166;
+}
+
+/* 
+Animations start from here:
+*/
+
+@keyframes text-heading {
+    0%{width:0px;}
+    100%{width:118px;}
+}

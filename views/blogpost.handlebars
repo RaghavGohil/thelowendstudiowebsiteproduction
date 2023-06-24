@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="/css/blogpost.css">
+<div class="blogpost-page">
+    <div class="blogpost-container">
+        <div class="blogpost-content-container">
+            <div class="blogpost-content">
+                <div class="blogpost-data">
+                    <h4>
+                        {{date}}, {{blog.author}}, 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FAD166" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                                <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                        </svg>
+                        <a href="{{blog.s_links.l1}}">{{blog.s_links.l1}}</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FAD166" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                                <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                        </svg>
+                        <a href="{{blog.s_links.l2}}">{{blog.s_links.l2}}</a>
+                    </h4>
+                </div>
+                <div class="blogpost-title">
+                    {{blog.title}}
+                    <hr>
+                </div>
+                <br>
+                <div class="blogpost-body">
+                    <p>{{{blog.body}}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <disqus-container>
+        <div id="disqus_thread"></div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            var disqus_config = function () {
+                this.page.url = 'http://localhost:8000/blogposts/{{blog._id}}/';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = '{{blog._id}}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://thelowendstudio.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+
+            $(document).ready(function() {
+            // Find all avatar images in the Disqus thread
+            $('#disqus_thread img.avatar').each(function() {
+                // Remove the border style from the image
+                $(this).removeAttr('style');
+            });
+            });
+
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </disqus-container>
+</div>
