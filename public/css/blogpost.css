@@ -126,6 +126,7 @@
     {   
         width:600;
         height:800;
+        margin:auto;
         object-fit:contain;
         overflow-clip-margin: unset;
         overflow: unset;
