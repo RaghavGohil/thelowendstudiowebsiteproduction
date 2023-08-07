@@ -1,4 +1,12 @@
-<link rel="stylesheet" href="/css/blogpost.css">
+<head>
+    <title>{{blog.title}} - The Low End Studio</title>
+    <meta name="description" content="{{blog.desc}}">
+    {{#each blog.tags}}
+    <meta name="keywords" content="{{this}}">
+    {{/each}}
+    <meta name="author" content="{{blog.author}}">
+    <link rel="stylesheet" href="/css/blogpost.css">
+</head>
 <div class="blogpost-page">
     <div class="blogpost-container">
         <div class="blogpost-content-container">
@@ -24,7 +32,6 @@
                     {{blog.title}}
                     <hr>
                 </div>
-                <br>
                 <div class="blogpost-body">
                     <p>{{{blog.body}}}</p>
                 </div>

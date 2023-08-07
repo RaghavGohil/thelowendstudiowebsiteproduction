@@ -5,6 +5,8 @@ const favicon = require('serve-favicon')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
+dotenv.config({path:'./config.env'})
+
 const path = require('path')
 const { urlencoded } = require('express')
 const app = express()
@@ -12,8 +14,6 @@ const port = process.env.PORT || 3001
 
 const faviconPath = '/public/images/favicon/favicon.ico'
 const publicPath = '/public'
-
-dotenv.config({path:'./config.env'})
 
 app.use(cors({origin:"*"}))
 
