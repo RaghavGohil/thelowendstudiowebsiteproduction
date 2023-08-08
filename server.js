@@ -34,6 +34,12 @@ app.use(express.static(path.join(__dirname+publicPath)))
 // app.use('/build/', express.static(path.join(__dirname, 'node_modules/three/build')))
 // app.use('/jsm/', express.static(path.join(__dirname, 'node_modules/three/examples/jsm')))
 
+//robots.txt
+app.use('/robots.txt', function (req, res, next) {
+    res.type('text/plain')
+    res.send("User-agent: *\nAllow: /");
+});
+
 // pages
 app.use('/',require(path.join(__dirname,'routes/index.js')))
 app.use('/',require(path.join(__dirname,'routes/blogs.js')))
