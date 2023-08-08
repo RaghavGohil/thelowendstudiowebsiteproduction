@@ -46,6 +46,11 @@ let blogPostSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    slug: 
+    {
+        type: String,
+        required: true
+    },
     desc: {
         type: String,
         required: true
@@ -120,16 +125,16 @@ router.get('/blogs',async (req,res)=>{
 })
 
 
-router.get('/blogpost/:id',async (req,res)=>{
+router.get('/blogpost/:slug',async (req,res)=>{
     try
     {
-        const blogPost = await BlogPost.findById(req.params.id).lean()
+        const blogPost = await BlogPost.findOne({slug: req.params.slug}).lean()
         blogPost.body = domPurify.sanitize(marked.parse(blogPost.body))
-        if(blogPost != null)
+        if(blogPost != null){
         res.render('blogpost',{
                 blog: blogPost,
                 date: blogPost.date.toLocaleDateString()
-        })
+        })}
     }
     catch(e)
     {

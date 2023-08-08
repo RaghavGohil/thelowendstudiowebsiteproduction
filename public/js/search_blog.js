@@ -37,7 +37,7 @@ searchInput.addEventListener('keyup' , async(e) => {
             {
                 resultItemContainer.innerHTML = ""
                 payload.forEach((item,index) => {
-                    resultItemContainer.innerHTML += `<div class="result-item-container"><div class="result-item"> <div class="result-text"><p><a href="blogpost/${item._id}"> ${item.title} </a> </p></div></div></div>`
+                    resultItemContainer.innerHTML += `<div class="result-item-container"><div class="result-item"> <div class="result-text"><p><a href="blogpost/${item.slug}"> ${item.title} </a> </p></div></div></div>`
                 })
                 return
             }
