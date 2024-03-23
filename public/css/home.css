@@ -77,7 +77,7 @@
         object-fit: cover;
         width:100%;
         height:100vh;
-        opacity: 30%;
+        opacity: 50%;
     }
 
     .index-page .hero .content-container
@@ -450,7 +450,7 @@
         object-fit: cover;
         width:100%;
         height:700px;
-        opacity: 40%;
+        opacity: 60%;
     }
 
     .index-page .hero .content-container
